@@ -6,6 +6,13 @@
 	<link rel="stylesheet" href="" type="text/css" charset="utf-8">
 	<script type="text/javascript" src=""charset="utf-8"></script>
 </head>	  
+<style>
+pre {
+	border: blue 1px solid;
+	padding: 5px;
+}
+</style>
+
 <body>
 <pre>
 目的:借助電路方面的技巧，在現有技術條件下發揮最大的潛力，而非單純拚工藝。
@@ -67,10 +74,12 @@
 靜態的IR-Drop方案將電晶體或標準單元的開關電流近似成電源網路的恆流或直流電源，通過簡化芯片的動態電源特性在更高的抽象級上分析IR-Drop的全局性影響。
 動態的IR-Drop分析通過HSPICE模型引入了邏輯門的寄生參數和耦合電容，並考慮每次翻轉電流的動態波型，側重於局部IR-Drop的影響。
 
-<pre>
+</pre>
 
 
 <pre>
+APR流程:
+
 1.數據導入:後端設計所需的設計數據主要包括前端設計後經過綜合生成的門級網表、
 具有時序約束(Timing Constraint)和時鐘定義的SDC約束文件、物理設計單元庫數據。<BR>
 
